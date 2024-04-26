@@ -1,8 +1,8 @@
 ---
-
+const { text, emphasis } = Astro.props;
 ---
 
-<div class="flex flex-col gap-6 bg-[#191D20] rounded-3xl p-8 justify-center">
+<div class="flex flex-col gap-6 bg-[#191D20] rounded-xl p-8 justify-center">
   <svg
     width="60"
     height="60"
@@ -16,6 +16,6 @@
   </svg>
 
   <h2 class="text-balance">
-    Based in Moscow, <span>Russia</span>
+    {text}<span>{emphasis}</span>
   </h2>
 </div>

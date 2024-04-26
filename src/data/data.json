@@ -1,0 +1,34 @@
+[
+    {
+        "description": "Yordan is a Graphic designer and FrontEnd developer",
+        "emphasis": " currently working at DesignMood.",
+        "img_url": "/profile_image.jpg"
+    },
+    {
+        "description2": "Have a project in mind?",
+        "email": "yalvarezb93@gamail.com"
+    },
+    {
+        "tags": [
+            "LikedIn",
+            "X",
+            "Behance", 
+            "Dribbble", 
+            "Figma", 
+            "Instagram"
+        ]
+    },
+    {
+        "description3": "Based in Moscow, ",
+        "emphasis3": "Russia"
+    },
+    {
+        "description4": "My design foundation is built on these core principles that I rely on everyday:",
+        "tag4": [
+            "Contrast",
+            "Repetition",
+            "Alignment",
+            "Balance"
+        ]
+    }
+]

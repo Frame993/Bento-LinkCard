@@ -1,19 +1,22 @@
 ---
 import { Image } from "astro:assets";
+
+
+const { title, src, emphasis } = Astro.props;
 ---
 
-<div class="w-full flex flex-col gap-6 bg-[#191D20] rounded-3xl p-8 justify-center">
+<div
+  class="w-full flex flex-col gap-6 bg-[#191D20] rounded-xl p-8 justify-center"
+>
   <Image
     class={"rounded-full"}
-    src="/profile_image.jpg"
+    src={src}
     alt="Profile Image"
     width={80}
     height={80}
     format="avif"
   />
-  <h2 class="text-balance w-[70%]">
-    Pasta Nick is a Product Design Lead & Illustrator <span
-      >currently designing at SkySlope.</span
-    >
+  <h2 class="text-balance md:w-[70%]">
+    {title}<span>{emphasis}</span>
   </h2>
 </div>

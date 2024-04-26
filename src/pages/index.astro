@@ -5,20 +5,28 @@ import EmailCard from "../components/EmailCard.astro";
 import SocialCard from "../components/SocialCard.astro";
 import LocationCard from "../components/LocationCard.astro";
 import DescriptionCard from "../components/DescriptionCard.astro";
+
+import json from "../data/data.json";
+
+const { description, emphasis, img_url } = json[0];
+const { description2, email } = json[1];
+const { tags } = json[2];
+const { description3, emphasis3 } = json[3];
+const { description4, tag4 } = json[4];
 ---
 
 <Layout title="Welcome to Astro.">
   <main class="flex flex-col gap-6 mx-auto py-6 w-[95%] md:w-full">
     <section class="flex md:flex-row flex-col gap-6">
-      <ProfileCard />
-      <EmailCard />
+      <ProfileCard title={description} src={img_url} emphasis={emphasis}/>
+      <EmailCard text={description2} email={email} />
     </section>
     <section class="flex md:flex-row flex-col gap-6">
-      <SocialCard title="LinkedIn"/>
+      {tags?.map((tag) => <SocialCard title={tag} />)}
     </section>
     <section class="flex md:flex-row flex-col gap-6">
-      <LocationCard />
-      <DescriptionCard />
+      <LocationCard text={description3} emphasis={emphasis3}/>
+      <DescriptionCard text={description4} tags={tag4}/>
     </section>
   </main>
 </Layout>
