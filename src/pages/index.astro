@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProfileCard from "../components/ProfileCard.astro";
+import EmailCard from "../components/EmailCard.astro";
+import SocialCard from "../components/SocialCard.astro";
+import LocationCard from "../components/LocationCard.astro";
+import DescriptionCard from "../components/DescriptionCard.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="flex flex-col gap-6 mx-auto">
+    <section class="flex flex-row gap-6">
+      <ProfileCard />
+      <EmailCard />
+    </section>
+    <section class="flex flex-row gap-6">
+      <SocialCard />
+      <SocialCard />
+      <SocialCard />
+      <SocialCard />
+      <SocialCard />
+    </section>
+    <section class="flex flex-row gap-6">
+      <LocationCard />
+      <DescriptionCard />
+    </section>
+  </main>
+</Layout>
