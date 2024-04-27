@@ -4,8 +4,20 @@ export interface DataJson {
     img_url?:      string;
     description2?: string;
     email?:        string;
-    tags?:         string[];
+    tags?:         Tag[];
     description3?: string;
-    emphasis2?:    string;
-    tag2?:         string[];
+    emphasis3?:    string;
+    description4?: string;
+    tag4?:         string[];
+}
+
+export interface Tag {
+    LikedIn?: Elements;
+    Behance?: Elements;
+    Githubb?: Elements;
+}
+
+export interface Elements {
+    title: string;
+    url:   string;
 }

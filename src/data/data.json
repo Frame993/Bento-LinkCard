@@ -1,6 +1,6 @@
 [
     {
-        "description": "Yordan is a Graphic designer and FrontEnd developer",
+        "description": "My name is Yordan a Graphic designer and FrontEnd developer",
         "emphasis": " currently working at DesignMood.",
         "img_url": "/profile_image.jpg"
     },
@@ -10,12 +10,24 @@
     },
     {
         "tags": [
-            "LikedIn",
-            "X",
-            "Behance", 
-            "Dribbble", 
-            "Figma", 
-            "Instagram"
+            {
+                "LikedIn": {
+                    "title": "LinkedIn",
+                    "url": "https://www.linkedin.com/in/yordan93/"
+                }
+            },
+            {
+                "Behance": {
+                    "title": "Behance",
+                    "url": "https://www.behance.net/abygraphics"
+                }
+            },
+            {
+                "Githubb": {
+                    "title": "Github",
+                    "url": "https://github.com/Frame993"
+                }
+            }
         ]
     },
     {
@@ -23,12 +35,13 @@
         "emphasis3": "Russia"
     },
     {
-        "description4": "My design foundation is built on these core principles that I rely on everyday:",
+        "description4": "My foundation is built on these core principles that I rely on everyday:",
         "tag4": [
-            "Contrast",
-            "Repetition",
-            "Alignment",
-            "Balance"
+            "Knowledge",
+            "Creativity",
+            "Focus",
+            "Input",
+            "Achievement"
         ]
     }
 ]

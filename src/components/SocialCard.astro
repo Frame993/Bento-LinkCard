@@ -2,8 +2,10 @@
 const { title, url } = Astro.props;
 ---
 
-<div
-  class="flex flex-row w-full bg-[#191D20] rounded-xl p-8 justify-center items-center hover:outline hover:outline-2 hover:outline-[#d9ff42] cursor-pointer"
-> 
-  <a href={url}> <h3>{title}</h3></a>
-</div>
+<a
+  href={url}
+  target="_blank"
+  class="flex flex-row w-full bg-[var(--card-background)] rounded-xl p-8 justify-center items-center hover:outline hover:outline-2 hover:outline-[#d9ff42] cursor-pointer"
+>
+  <h3>{title}</h3>
+</a>

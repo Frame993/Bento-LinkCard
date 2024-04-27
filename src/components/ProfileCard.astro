@@ -1,22 +1,25 @@
 ---
 import { Image } from "astro:assets";
-
+import ThemeSelector from "./ThemeSelector";
 
 const { title, src, emphasis } = Astro.props;
 ---
 
 <div
-  class="w-full flex flex-col gap-6 bg-[#191D20] rounded-xl p-8 justify-center"
+  class="w-full flex flex-col gap-6 bg-card-background rounded-xl p-8 justify-center"
 >
-  <Image
-    class={"rounded-full"}
-    src={src}
-    alt="Profile Image"
-    width={80}
-    height={80}
-    format="avif"
-  />
-  <h2 class="text-balance md:w-[70%]">
+  <div class="flex flex-row items-center justify-between">
+    <Image
+      class={"rounded-full"}
+      src={src}
+      alt="Profile Image"
+      width={80}
+      height={80}
+      format="avif"
+    />
+    <ThemeSelector client:visible />
+  </div>
+  <h2 class="text-pretty">
     {title}<span>{emphasis}</span>
   </h2>
 </div>
