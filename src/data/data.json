@@ -23,9 +23,15 @@
                 }
             },
             {
-                "Githubb": {
+                "Github": {
                     "title": "Github",
                     "url": "https://github.com/Frame993"
+                }
+            },
+            {
+                "Web": {
+                    "title": "Website",
+                    "url": "https://yordandev.netlify.app/"
                 }
             }
         ]

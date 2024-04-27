@@ -15,6 +15,7 @@ export interface Tag {
     LikedIn?: Elements;
     Behance?: Elements;
     Githubb?: Elements;
+    Web?: Elements;
 }
 
 export interface Elements {
