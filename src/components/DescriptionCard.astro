@@ -8,9 +8,9 @@ const { tags, text } = Astro.props;
   <h2 class="text-balance">
     {text}
   </h2>
-  <h2 class="font-normal text-[var(--text-secundary-text)] text-[28px]">
-    <ul class="flex md:flex-row flex-col gap-4">
-      {tags?.map((tag: string) => <li><span class="text-[#d9ff42]">/</span>{tag}</li>)}
+  <h2 class="font-normal text-[var(--text-secundary-text)] md:text-[28px] text-[24px]">
+    <ul class="flex flex-row flex-wrap gap-x-6 gap-y-4" >
+      {tags?.map((tag: string) => <li><span class="text-[#d9ff42]">• </span>{tag}</li>)}
     </ul>
   </h2>
 </div>

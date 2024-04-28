@@ -22,14 +22,19 @@ const items = tags?.map((tag:any) => tag.LikedIn || tag.Behance || tag.Github ||
   <main class="flex flex-col gap-6 mx-auto py-6 w-[95%] md:w-full">
     <section class="flex md:flex-row flex-col gap-6">
       <ProfileCard title={description} src={img_url} emphasis={emphasis} />
-      <EmailCard text={description2} email={email} />
+      <EmailCard text={description2} email={email} className="md:flex hidden" />
     </section>
-    <section class="flex md:flex-row flex-col gap-6">
+    <section class="md:flex md:flex-row flex-col gap-6 hidden">
       {items?.map((item: Elements) => <SocialCard title={item.title} url={item.url} />)}
     </section>
     <section class="flex md:flex-row flex-col gap-6">
       <LocationCard text={description3} emphasis={emphasis3} />
       <DescriptionCard text={description4} tags={tag4} />
+    </section>
+   <!-- Mobile version -->
+    <section class="flex md:flex-row flex-col gap-6 md:hidden">
+      {items?.map((item: Elements) => <SocialCard title={item.title} url={item.url} />)}
+      <EmailCard text={description2} email={email} className="md:visible" />
     </section>
   </main>
 </Layout>
