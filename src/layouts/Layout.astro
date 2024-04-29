@@ -90,6 +90,15 @@ const { title } = Astro.props;
     scale: 1.05;
   }
 
+  .animation {
+    transition: all 0.3s ease;
+  }
+
+  .animation:hover{
+    translate: -5px -5px;
+    box-shadow: var(--text-secundary-text) 5px 5px 0px 0px;
+  }
+
   @media screen and (max-width: 700px) {
     body {
       height: auto;
